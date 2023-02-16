@@ -39,12 +39,4 @@ Dependencies
 
 This project requires XAMPP (or a similar server package) to be installed on your machine to run. All other dependencies are included in the project directory.
 
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-Acknowledgments
-
-Bootstrap for the CSS framework
-Font Awesome for the icons used in the project
 
