@@ -97,7 +97,7 @@ if (!isset($_SESSION["id"])) {
                             </div>
 
                             <div class="form-group">
-                                <label for="CategoryTitle"> <span class="FieldInfo"> Choose Category </span></label>
+                                <label for="CategoryTitle"> <span class="FieldInfo"> Choose Category :</span></label>
                                 <select class="form-control" id="CategoryTitle" name="Category">
 
                                 </select>

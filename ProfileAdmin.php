@@ -11,8 +11,8 @@ if (!isset($_SESSION["id"])) {
   if ($_SESSION["admin"] == false) {
     header("location: LoginPage.php?error=You are not Admin please Login as Admin");
   }
-}
-?>
+}   
+?> 
 
 <!doctype html>
 <html lang="en">
@@ -87,8 +87,8 @@ if (!isset($_SESSION["id"])) {
       <div class="col-lg-2 d-none d-md-block">
         <div class="card text-center bg-dark text-white mb-3 shadow-lg">
           <div class="card-body">
-            <h1 class="lead">Posts</h1>
-            <h4 class="display-5">
+            <h1 class="lead">My Posts</h1>
+            <h4 class="display-5" id="post">
               <i class="fab fa-readme"></i>
             </h4>
           </div>
@@ -96,8 +96,8 @@ if (!isset($_SESSION["id"])) {
 
         <div class="card text-center bg-dark text-white mb-3 shadow-lg">
           <div class="card-body">
-            <h1 class="lead">Categories</h1>
-            <h4 class="display-5">
+            <h1 class="lead">My Categories</h1>
+            <h4 class="display-5" id="category">
               <i class="fas fa-folder"></i>
             </h4>
           </div>
@@ -105,8 +105,17 @@ if (!isset($_SESSION["id"])) {
 
         <div class="card text-center bg-dark text-white mb-3 shadow-lg">
           <div class="card-body">
-            <h1 class="lead">Admins</h1>
-            <h4 class="display-5">
+            <h1 class="lead">Total Admins</h1>
+            <h4 class="display-5" id="admin">
+            <i class="fa-solid fa-user-secret"></i>
+            </h4>
+          </div>
+        </div>
+
+        <div class="card text-center bg-dark text-white mb-3 shadow-lg">
+          <div class="card-body">
+            <h1 class="lead">Total Users</h1>
+            <h4 class="display-5" id="users">
               <i class="fas fa-users"></i>
             </h4>
           </div>

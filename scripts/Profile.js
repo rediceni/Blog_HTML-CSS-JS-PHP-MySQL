@@ -17,6 +17,7 @@ const year = new Date().getFullYear();
 document.querySelector("#year").innerHTML = ` ${year}`;
 
 let fetchURL = "API/post/readAll.php";
+let statisticsURL="API/statistics/readStatistics.php"
 
 const urlParams = new URLSearchParams(window.location.search);
 const adminParam = urlParams.get("admin");
@@ -24,13 +25,46 @@ const userParam = urlParams.get("user");
 
 if (adminParam) {
   fetchURL += `?admin=${adminParam}`;
+  statisticsURL+=`?admin=${adminParam}`;
 } else {
-  fetchURL += `?user=${adminParam}`;
+  fetchURL += `?user=${userParam}`;
+
 }
 
 window.onload = function () {
   readAllPosts();
+  if(adminParam){
+  readStatistics();
+  }
 };
+
+
+function readStatistics(){
+
+  fetch(statisticsURL, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((statistics) => {
+
+  document.querySelector('#post').append(statistics.postNr);
+  document.querySelector('#category').append(statistics.categoryNr);
+  document.querySelector('#admin').append(statistics.adminNr);
+  document.querySelector('#users').append(statistics.userNr);
+     
+
+    }).catch(function (error) {
+      console.log(error);
+    });
+
+}
+
+
 
 function readAllPosts() {
   fetch(fetchURL, {

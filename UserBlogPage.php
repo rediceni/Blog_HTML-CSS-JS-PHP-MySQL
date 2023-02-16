@@ -44,7 +44,7 @@ if (!isset($_SESSION["id"])) {
                 <ul class="navbar-nav">
                     <!-- 1 -->
                     <li class="nav-item px-3">
-                        <a href="MyProfile.php" class="nav-link text-success"><i class="fa-solid fa-user"></i> My Profile</a>
+                        <a href="ProfileUser.php?user=<?php echo $_SESSION["username"] ?>" class="nav-link text-success"><i class="fa-solid fa-user"></i> My Profile</a>
                     </li>
                     <!-- 3 -->
                     <li class="nav-item px-3">
