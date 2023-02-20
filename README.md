@@ -24,7 +24,7 @@ Features:
 - Admin panel restricted to admin-only access for performing CRUD operations
 - Object-oriented PHP for server-side processing
 - REST API using PHP for communication with the client-side
-- AJAX (using fetch or XMLHttpRequest) calls to communicate with the API
+- AJAX calls to communicate with the API
 
 
 How to Run:
