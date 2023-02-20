@@ -72,7 +72,7 @@ class SignupContr extends Signup
 
         $results = false;
 
-        if (!preg_match("/^[A-Za-z][A-Za-z0-9]{5,31}$/", $this->username)) {
+        if (!preg_match("/^[A-Za-z][A-Za-z0-9]{6,31}$/", $this->username)) {
             $results = false;
         } else {
             $results = true;

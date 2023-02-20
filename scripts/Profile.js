@@ -112,9 +112,6 @@ function readAllPosts() {
 
           const postDescription = document.createElement("p");
           postDescription.setAttribute("class", "card-text");
-          if (post.text.length > 150) {
-            post.text = post.text.substring(0, 150) + "...";
-          }
           postDescription.innerHTML = post.text;
           divCardBody.appendChild(postDescription);
 

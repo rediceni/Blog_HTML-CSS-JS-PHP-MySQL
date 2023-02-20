@@ -19,6 +19,17 @@ document.querySelector("#year").innerHTML = ` ${year}`;
 const urlParams = new URLSearchParams(window.location.search);
 const paramId = urlParams.get("id");
 const paramAdmin = urlParams.get("admin");
+const paramUser = urlParams.get("user");
+
+let param;
+
+if (paramAdmin) {
+  param = paramAdmin;
+  RedirectURL = `AdminBlogPage.php?admin=${param}`;
+} else {
+  param = paramUser;
+  RedirectURL = `UserBlogPage.php?user=${param}`;
+}
 
 window.onload = function () {
   readPost();
@@ -78,7 +89,7 @@ document.querySelector(".form").addEventListener("submit", function (event) {
       if (typeOfAlert == "success") {
         setTimeout(() => {
           //Redirecting the user deppending on the succes or danger
-          window.location.assign(`AdminBlogPage.php?admin=${paramAdmin}`);
+          window.location.assign(RedirectURL);
         }, 1500);
       }
     })

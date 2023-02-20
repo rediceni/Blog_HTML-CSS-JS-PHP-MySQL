@@ -63,7 +63,7 @@ if (!isset($_SESSION["id"])) {
     </div>
 </div>
 </nav>
-<div style="height:25px; background-color: #e2eefe;"></div>
+<div style="height:25px; "></div>
 <!-- NAVBAR END -->
 
 

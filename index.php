@@ -107,7 +107,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="load text-center">Footer | Blog |<span id="year"></span> &copy; ---ALl rights Reserved</p>
+                    <p class="load text-center">Footer | Blog |<span id="year"></span> &copy; ---All rights Reserved</p>
                 </div>
             </div>
         </div>

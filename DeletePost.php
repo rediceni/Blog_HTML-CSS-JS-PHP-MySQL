@@ -65,17 +65,16 @@ if (!isset($_SESSION["id"])) {
             </div>
         </div>
     </nav>
-    <div style="height:25px; background-color: white;"></div>
+
     <!-- NAVBAR END -->
 
 
-    <!-- HEADER START -->
-    <header class="bg-dark text-white py-3">
+ <!-- HEADER START -->
+
+ <header class="bg-lighttext-white mt-5">
         <div class="container">
-            <div class="row">
-                <div class="column ml-5">
-                    <h3><i class="fa-solid fa-delete-left px-3"></i> DELETE POST </h3>
-                </div>
+            <div class="row mt-2" id="Row">
+                <h3 class="lead" style="font-size:30px; font-weight:bold ;"><i class="fas fa-edit"></i>  DELETE POST </h3>
             </div>
         </div>
     </header>

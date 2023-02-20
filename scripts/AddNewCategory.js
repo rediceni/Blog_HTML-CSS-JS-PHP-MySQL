@@ -53,7 +53,7 @@ document.querySelector(".form").addEventListener("submit", (event) => {
       if (typeOfAlert == "success") {
         setTimeout(() => {
           //Redirecting the user deppending on the succes or danger
-          window.location.assign("AdminBlogPage.php");
+          window.location.assign(`AdminBlogPage.php?admin=${paramAdmin}`);
         }, 1500);
       }
     })
